@@ -9,6 +9,8 @@ import { Product } from '../products';
 export class ProductAlertsComponent implements OnInit {
 
   @Input() product!: Product;
+  @Output() notify = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
